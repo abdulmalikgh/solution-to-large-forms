@@ -9,131 +9,60 @@
 </head>
 <body>
   <header>
-    <span class="company-name">🂡 Cam's Company 🂡</span>
+    <span class="company-name"> Cam's Company </span>
     <span class="company-page">Checkout Page</span>
   </header>
   <section class="progress-bar">
     Seems like this could be a good place for a progress bar...
   </section>
   <section class="form">
-    <h3>Your Name and Demographic Information</h3>
-    <label>First Name
-      <input type="text">
+    <h2>Billing Address</h2>
+    <form action="">
+      
+    <label for="firstname">First Name
+      <input type="text" id="firstname" name="firstname" placeholder="firstname" autocomplete="given-name">
     </label>
-    <label>Middle Initial
-      <input type="text">
+    <label for="lastname">Last Name
+      <input type="text" id="lastname" name="lastname" placeholder="lastname" autocomplete="family-name">
     </label>
-    <label>Last Name
-      <input type="text">
+    <label for="email">Email Address
+      <input type="text" id="email" placeholder="me@example.com" autocomplete="email" name="email">
     </label>
-    <label>Age
-      <select name="age">
-        <option>&lt;18</option>
-        <option>18-25</option>
-        <option>26-35</option>
-        <option>36-50</option>
-        <option>&gt;50</option>
-      </select>
+    <label for="address1">Address Line 1
+      <input type="text" id="address1" name="address1" placeholder="address line1" autocomplete="address-line1">
     </label>
-    <label>Gender
-      <select name="gender">
-        <option>Male</option>
-        <option>Female</option>
-      </select>
+    <label for="address2">Address Line 2
+      <input type="text" id="address2" name="address2" placeholder="address line2" autocomplete="address-line2">
     </label>
-    <label>Email Address
-      <input type="text">
+    <label for="country">Country
+      <input type="country" id="country" autocomplete="country" >
     </label>
-    <label>Confirm Email Address
-      <input type="text">
+    <label for="city">City
+      <input type="text" id="city" placeholder="city" name="city" autocomplete="address-level1">
+    </label for="state">
+    <label for="postalcode">Postal Code
+      <input type="number" id="postalcode" name="postalcode" autocomplete="postal-code" placeholder="postal code">
     </label>
-    <label>Put me on the mailing list?
-      <input class="inline" type="checkbox">
-    </label>
-
-    <h3>Your Shipping Address</h3>
-    <label>First Name
-      <input type="text">
-    </label>
-    <label>Middle Initial
-      <input type="text">
-    </label>
-    <label>Last Name
-      <input type="text">
-    </label>
-    <label>Company
-      <input type="text">
-    </label>
-    <label>Address Line 1
-      <input type="text">
-    </label>
-    <label>Address Line 2
-      <input type="text">
-    </label>
-    <label>City
-      <input type="text">
-    </label>
-    <label>State/Province
-      <input type="text">
-    </label>
-    <label>Postal Code
-      <input type="text">
-    </label>
-    <label>Country
-      <input type="text">
-    </label>
-
-    <h3>Your Credit Card Information</h3>
-    <div class="cc-warning"><em>Note: don't enter any actual credit card info!</em></div>
-    <label>Credit Card Number
-      <input type="text">
+     <h2>Credit Information</h2>
+     <label for="cc-number">Credit Card Number
+      <input type="number" id="cc-number" autocomplete="cc-number" placeholder="credit card number">
     </label>
     <label>Credit Card Type
-      <select name="cc">
-        <option>Visa</option>
-        <option>American Express</option>
-        <option>Mastercard</option>
-        <option>Discover</option>
+      <input list="cc-type" autocomplete="cc-type">
+      <datalist id="cc-type" >
+        <option value="Visa"></option>
+        <optio  value="American Express"></option>
+        <option value="Mastercard"></option>
+        <option value="Discover"></option>
       </select>
     </label>
-    <label>Expiration Date
-      <input type="text" placeholder="MM"><input type="text" placeholder="YY">
+    <label for="exp-date">Expiration Date
+      <input type="date" id="exp-date" autocomplete="cc-exp">
     </label>
-    <label>CVV
-      <input type="number">
+    <label for="cvv">CVV
+      <input type="number" id="cvv" autocomplete="cc-csc" placeholder="cvv">
     </label>
-
-    <h3>Your Billing Address</h3>
-    <label>First Name
-      <input type="text">
-    </label>
-    <label>Middle Initial
-      <input type="text">
-    </label>
-    <label>Last Name
-      <input type="text">
-    </label>
-    <label>Company
-      <input type="text">
-    </label>
-    <label>Address Line 1
-      <input type="text">
-    </label>
-    <label>Address Line 2
-      <input type="text">
-    </label>
-    <label>City
-      <input type="text">
-    </label>
-    <label>State/Province
-      <input type="text">
-    </label>
-    <label>Postal Code
-      <input type="text">
-    </label>
-    <label>Country
-      <input type="text">
-    </label>
+    </form>
   </section>
 
   <section class="order-review">
@@ -167,11 +96,5 @@
     </label>
     <input id="submit" type="submit">
   </section>
-  <script>
-    var submit = document.querySelector('#submit');
-    submit.onclick = function () {
-      alert("All of your information was valid, right? I'll just go ahead and assume that it is ;)\n\nThanks for your submission!");
-    };
-  </script>
 </body>
 </html>

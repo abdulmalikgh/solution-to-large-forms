@@ -15,58 +15,9 @@
   <section class="progress-bar">
     Seems like this could be a good place for a progress bar...
   </section>
-  <section class="form">
-    <h2>Billing Address</h2>
-    <form action="">
-      
-    <label for="firstname">First Name
-      <input type="text" id="firstname" name="firstname" placeholder="firstname" autocomplete="given-name">
-    </label>
-    <label for="lastname">Last Name
-      <input type="text" id="lastname" name="lastname" placeholder="lastname" autocomplete="family-name">
-    </label>
-    <label for="email">Email Address
-      <input type="text" id="email" placeholder="me@example.com" autocomplete="email" name="email">
-    </label>
-    <label for="address1">Address Line 1
-      <input type="text" id="address1" name="address1" placeholder="address line1" autocomplete="address-line1">
-    </label>
-    <label for="address2">Address Line 2
-      <input type="text" id="address2" name="address2" placeholder="address line2" autocomplete="address-line2">
-    </label>
-    <label for="country">Country
-      <input type="country" id="country" autocomplete="country" >
-    </label>
-    <label for="city">City
-      <input type="text" id="city" placeholder="city" name="city" autocomplete="address-level1">
-    </label for="state">
-    <label for="postalcode">Postal Code
-      <input type="number" id="postalcode" name="postalcode" autocomplete="postal-code" placeholder="postal code">
-    </label>
-     <h2>Credit Information</h2>
-     <label for="cc-number">Credit Card Number
-      <input type="number" id="cc-number" autocomplete="cc-number" placeholder="credit card number">
-    </label>
-    <label>Credit Card Type
-      <input list="cc-type" autocomplete="cc-type">
-      <datalist id="cc-type" >
-        <option value="Visa"></option>
-        <optio  value="American Express"></option>
-        <option value="Mastercard"></option>
-        <option value="Discover"></option>
-      </select>
-    </label>
-    <label for="exp-date">Expiration Date
-      <input type="date" id="exp-date" autocomplete="cc-exp">
-    </label>
-    <label for="cvv">CVV
-      <input type="number" id="cvv" autocomplete="cc-csc" placeholder="cvv">
-    </label>
-    </form>
-  </section>
-
   <section class="order-review">
     <h3>Your Order</h3>
+    <img src="./images/NES-Console-Set.png">
     <table class="your-order">
       <tr class="headings">
         <td>Product</td>
@@ -90,11 +41,59 @@
         <td>Total</td>
         <td>$550.00</td>
       </tr>
-    </table>
-    <label class="check-correct">Is your order correct?
-      <input type="checkbox">
+   
     </label>
-    <input id="submit" type="submit">
+    </table>
   </section>
+  <section class="form">
+    <h2>Billing Address</h2>
+    <form action="">
+      
+    <label for="firstname">First Name
+      <input type="text" id="firstname" name="fname" placeholder="firstname" autocomplete="billing given-name">
+    </label><br>
+    <label for="lastname">Last Name
+      <input type="text" id="lastname" name="lname" placeholder="lastname" autocomplete="billing family-name">
+    </label><br>
+    <label for="email">Email Address
+      <input type="text" id="email" placeholder="me@example.com" autocomplete="email" name="email">
+    </label><br>
+    <label for="address1">Address Line 1
+      <input type="text" id="address1" name="address line1" placeholder="address line1" autocomplete="address-line1">
+    </label><br>
+    <label for="address2">Address Line 2
+      <input type="text" id="address2" name="address line2" placeholder="address line2" autocomplete="address-line2">
+    </label><br>
+    <label for="country">Country
+      <input type="country" id="country" autocomplete="country" name="addres country">
+    </label><br>
+    <label for="city">City
+      <input type="text" id="city" placeholder="city" name="address city" autocomplete="address-level1">
+    </label for="state"><br>
+    <label for="postalcode">Postal Code
+      <input type="number" id="postalcode" name="zip1" autocomplete="postal-code" placeholder="postal code">
+    </label><br>
+     <h2>Credit Information</h2>
+     <label for="cc-number">Credit Card Number
+      <input type="number" id="cc-number" autocomplete="cc-number" placeholder="credit card number">
+    </label><br>
+    <label for="cc-type">Credit Card Type
+      <input list="cc-type" id="cc-type" autocomplete="cc-type" name="cc-name">
+      <datalist id="cc-type" >
+        <option value="Visa"></option>
+        <optio  value="American Express"></option>
+        <option value="Mastercard"></option>
+        <option value="Discover"></option>
+      </select>
+    </label><br>
+    <label for="exp-date">Expiration Date
+      <input type="date" id="exp-date" autocomplete="cc-exp">
+    </label><br>
+    <label for="cvv">CVV
+      <input type="number" id="cvv" autocomplete="cc-csc" placeholder="cvv">
+    </label><br>
+    <input id="submit" type="submit">
+    </form>
+  </section>    
 </body>
 </html>
